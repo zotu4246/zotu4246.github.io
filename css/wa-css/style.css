@@ -1,0 +1,181 @@
+/* General page style */
+body {
+  margin: 0em;
+}
+
+html {
+  font-family: "Helvetica neue", Arial, "sans serif";
+  font-size: 10px;
+  background-color: #ccc;
+}
+
+.card {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  /*margin changes the placement of the ".card" and auto sets it to center */
+  background-color: rgba(256, 0, 0, 1);
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
+
+/* Main card container */
+
+.card article {
+  height: 12em;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Note-to-self: a= alpha and affects the trans.*/
+  color: rgb(255, 255, 255);
+  /*text color*/
+  line-height: 1.7em;
+}
+
+.card article p {
+  padding: 0 1em;
+}
+
+/* image floated to the right */
+.card article img {
+  max-height: 100%;
+  float: right;
+}
+
+/* Removing defaults */
+
+.card h2,
+.card p {
+  margin: 0;
+}
+
+/* Header and footer specific styles */
+
+.card header {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0)
+  );
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.card footer {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.2)
+  );
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+/*padding for header and footer*/
+
+.card header,
+.card footer {
+  height: 3em;
+  padding: 1em;
+}
+
+/*h2 with a height of 20px exrpessed in em */
+
+.card header h2 {
+  font-size: 2em;
+
+  /* h2 header is centered */
+  line-height: 1.5em;
+}
+
+.card footer p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+/* Personal buissiness card */
+
+/* General page style */
+body {
+  margin: 0em;
+}
+
+.personal-card {
+  width: 35em;
+  height: 22em;
+  margin: 15em auto;
+  /*margin changes the placement of the ".card" and auto sets it to center */
+  background-color: white;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+
+  font-family: futura;
+  font-size: 10px;
+}
+
+/* Main card container */
+
+.personal-card article {
+  height: 12em;
+  background-color: rgba(26, 26, 26, 0.8);
+  /* Note-to-self: a= alpha and affects the trans.*/
+  color: rgb(255, 255, 255);
+  /*text color*/
+  line-height: 1.5em;
+}
+
+.personal-card article p {
+  padding: 0 1em;
+}
+
+/* image floated to the right */
+.personal-card article img {
+  max-height: 100%;
+  float: right;
+  border-radius: 1.5em 0em 0em 1.5em;
+}
+
+/* Removing defaults */
+
+.personal-card h2,
+.personal-card p {
+  margin: 0;
+}
+
+/* Header and footer specific styles */
+
+.personal-card header {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  );
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.personal-card footer {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5)
+  );
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+/*padding for header and footer*/
+
+.personal-card header,
+.personal-card footer {
+  height: 3em;
+  padding: 1em;
+}
+
+/*h2 with a height of 20px exrpessed in em */
+
+.personal-card header h2 {
+  font-size: 2em;
+
+  /* h2 header is centered */
+  line-height: 1.5em;
+}
+
+.personal-card footer p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
