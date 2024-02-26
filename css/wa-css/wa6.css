@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background: #fff;
+}
+
+article {
+  width: 310mm;
+  height: 207mm;
+  margin: 10px auto;
+  position: relative;
+  border: 1mm solid black;
+  background-color: white;
+}
+
+.overlay-container {
+  position: relative;
+  width: 100%; /* Adjust based on your needs */
+  height: auto;
+}
+
+.background-image,
+.breaking-news {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  top: 15mm;
+  left: 20mm;
+}
+
+.breaking-news {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 90mm;
+  left: 5mm;
+}
+
+h1 {
+  position: absolute;
+  top: 177mm;
+  left: 85mm;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  /*background: url(../../img/wa6/breaking-news.png) no-repeat left bottom; */
+}
