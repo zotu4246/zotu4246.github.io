@@ -49,12 +49,12 @@ article {
       rgba(0, 0, 0, 0) 80%,
       rgba(0, 0, 0, 0.2)
     ),
-    url(top-image.png) no-repeat left top,
-    url(bottom-image.png) no-repeat left bottom;
+    url(../ica/ica6/top-image.png) no-repeat left top,
+    url(../ica/ica6/bottom-image.png) no-repeat left bottom;
   background-color: white;
 }
 
 h1 {
-  background: url(logo.png);
+  background: url(../ica/ica6/logo.png);
   filter: drop-shadow(rgba(0, 0, 0, 0.8) 1em 1em 25px);
 }
