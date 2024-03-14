@@ -1,0 +1,95 @@
+/* index.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  /*background-image: url(../img/purpleBlocks.png);*/
+  background-size: 100%;
+}
+
+.logoContainer {
+  position: relative;
+  padding-top: 200px;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 250px;
+  height: auto;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+div.first,
+div.second,
+div.third,
+div.fourth,
+div.fifth,
+div.sixth,
+div.seventh,
+div.eighth,
+div.ninth {
+  background-color: rgba(120, 120, 120, 0.5);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  display: grid;
+  gap: 30px;
+}
+
+h3 {
+  color: black;
+  font-size: 30px;
+}
+
+h4 {
+  color: #662d91;
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #662d91;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #518e2e;
+}
+
+@media screen and (max-width: 1000px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 700px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
