@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  color: white;
   font-family: Arial, sans-serif;
   /*background-image: url(../img/purpleBlocks.png);*/
   background-size: 100%;
@@ -15,15 +16,20 @@ body {
 
 .logoContainer {
   position: relative;
-  padding-top: 200px;
+  padding-top: 250px;
 }
 
 .logo {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 250px;
+  width: 350px;
   height: auto;
+  transition: filter 0.3s ease;
+}
+
+.logo:hover {
+  filter: invert(100%);
 }
 
 .gridContainer {
@@ -41,32 +47,78 @@ div.sixth,
 div.seventh,
 div.eighth,
 div.ninth {
-  background-color: rgba(120, 120, 120, 0.5);
+  background-color: rgb(103, 47, 143);
   border-radius: 12px;
   padding: 30px;
-  margin-bottom: 30px;
+  margin: auto;
   width: 90%;
   display: grid;
   gap: 30px;
 }
 
+div.first > :not(h3),
+div.second > :not(h3),
+div.third > :not(h3),
+div.fourth > :not(h3),
+div.fifth > :not(h3),
+div.sixth > :not(h3),
+div.seventh > :not(h3),
+div.eighth > :not(h3),
+div.ninth > :not(h3) {
+  display: none;
+}
+
+div.first:hover > :not(h3),
+div.second:hover > :not(h3),
+div.third:hover > :not(h3),
+div.fourth:hover > :not(h3),
+div.fifth:hover > :not(h3),
+div.sixth:hover > :not(h3),
+div.seventh:hover > :not(h3),
+div.eighth:hover > :not(h3),
+div.ninth:hover > :not(h3) {
+  display: block;
+}
+
+div.second,
+div.third,
+div.fourth,
+div.fifth,
+div.sixth,
+div.seventh,
+div.eighth,
+div.ninth {
+  cursor: pointer;
+}
+
 h3 {
-  color: black;
+  color: white;
   font-size: 30px;
+  margin: 0;
+  padding: 1px;
 }
 
 h4 {
   color: #662d91;
   font-size: 1.2em;
+  margin: 0;
+  padding: 1px;
 }
 
 h5 {
   font-size: 1.1em;
-  margin-top: 20px;
+  margin: 0;
+  padding: 1px;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+  padding: 1px;
 }
 
 .button {
-  background-color: #662d91;
+  background-color: #daa520;
   border: none;
   color: white;
   padding: 15px 30px;
@@ -80,7 +132,8 @@ h5 {
 }
 
 .button:hover {
-  background-color: #518e2e;
+  background-color: white;
+  color: rgb(103, 47, 143);
 }
 
 @media screen and (max-width: 1000px) {
