@@ -26,7 +26,7 @@ function randomValueFromArray(array) {
 //turned into a slug and crawled away
 
 const storyText =
-  "It was a chilly 45 fahrenheight outside, so :insertx: decided to venture into the mysterious :inserty:. Upon reaching the center, he gaped in awe at the sight of a dragon made entirely of scoops of mint chocolate chip ice cream, breathing frosty breath. Fearing his ice cream would melt, :insertx: quickly snapped a selfie his friend randomName and the frosty beast and dashed out, leaving behind a trail of :insertz:.";
+  "It was a chilly 45 fahrenheit outside, so :insertx: decided to venture into the mysterious :inserty:. Upon reaching the center, he gaped in awe at the sight of a dragon made entirely of scoops of mint chocolate chip ice cream, breathing frosty breath. Fearing his ice cream would melt, :insertx: quickly snapped a selfie his friend randomName and the frosty beast and dashed out, leaving behind a trail of :insertz:.";
 const insertx = [
   "Will Zippy McZapface",
   "Giggles McFuzzbucket",
@@ -64,7 +64,7 @@ function result() {
     const temperature = Math.round((45 - 32) * (5 / 9)) + " centigrade";
 
     newStory = newStory.replace("300 pounds", weight);
-    newStory = newStory.replace("45 fahrenheight", temperature);
+    newStory = newStory.replace("45 fahrenheit", temperature);
   }
 
   story.textContent = newStory;
