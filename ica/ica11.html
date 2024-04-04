@@ -69,11 +69,18 @@
       const btn = document.querySelector("button");
 
       function warningInput() {
-        let text = prompt("Warning!");
-        return text;
+        let text = prompt("Is this a warning or a chat?");
+        if (text === "warning") {
+          return ["Warning!", "warning"];
+        } else {
+          return ["Chat!", "chat"];
+        }
       }
 
-      btn.addEventListener("click", () => displayMessage(userInput(), "chat"));
+      btn.addEventListener("click", () => {
+        const [userInput, messageType] = warningInput();
+        displayMessage(userInput, messageType);
+      });
     </script>
   </body>
 </html>
