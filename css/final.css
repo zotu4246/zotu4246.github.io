@@ -39,3 +39,20 @@ body {
     opacity: 0;
   }
 }
+
+@keyframes moveAround {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(300px, 300px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+#volume-control {
+  position: absolute;
+  animation: moveAround 1.8s linear infinite;
+}
