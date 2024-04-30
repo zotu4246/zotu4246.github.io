@@ -12,9 +12,6 @@ body {
   padding: 20px;
   background: #dd2772;
   border: 5px dashed red;
-
-  display: flex;
-  justify-content: center;
 }
 
 #volume-slider {
@@ -35,7 +32,7 @@ body {
 }
 
 @keyframes blink {
-  20% {
+  10% {
     opacity: 0;
   }
 }
@@ -55,5 +52,5 @@ body {
 #volume-control {
   position: absolute;
   /* Your other styles */
-  animation: moveAndSpin 5s linear infinite;
+  animation: moveAndSpin 7s linear infinite;
 }
