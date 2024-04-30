@@ -40,19 +40,20 @@ body {
   }
 }
 
-@keyframes moveAround {
+@keyframes moveAndSpin {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0, 0) rotate(0deg);
   }
   50% {
-    transform: translate(300px, 300px);
+    transform: translate(600px, 600px) rotate(180deg);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translate(0, 0) rotate(360deg);
   }
 }
 
 #volume-control {
   position: absolute;
-  animation: moveAround 1.8s linear infinite;
+  /* Your other styles */
+  animation: moveAndSpin 5s linear infinite;
 }
