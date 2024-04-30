@@ -1,6 +1,6 @@
 body {
   font-family: "Comic Sans MS", cursive;
-  background-color: magenta;
+  background-color: black;
   color: yellow;
   text-align: center;
 }
@@ -10,7 +10,7 @@ body {
   width: 300px;
   margin: auto;
   padding: 20px;
-  background: lime;
+  background: #dd2772;
   border: 5px dashed red;
 
   display: flex;
